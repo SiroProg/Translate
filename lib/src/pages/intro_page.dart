@@ -23,12 +23,15 @@ Tilni tanlang / Выберите язык / Chose languige
         languige = "en";
     }
 
-    io.translateAndWrite("""
+    await io.translateAndWrite("""
 - Saladlar
 - Ichimliklar
 - Fast Food
 - Shirinliklar
 - Milliy taomlar
+
 """, languige);
+
+    print('\n\n');
   }
 }
