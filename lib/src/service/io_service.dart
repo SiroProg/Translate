@@ -6,9 +6,9 @@ class IOService {
 
   String read() => stdin.readLineSync() ?? "";
 
-  Future<String> w(String text, String translate) async {
+  Future<void> translateAndWrite(String text, String translate) async {
     final translator = GoogleTranslator();
     Translation translated = await translator.translate(text, to: translate);
-     return translated.text.toString();
+    stdout.write(translated.text.toString());
   }
 }

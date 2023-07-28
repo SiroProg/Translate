@@ -23,7 +23,7 @@ Tilni tanlang / Выберите язык / Chose languige
         languige = "en";
     }
 
-    io.write("""
+    io.translateAndWrite("""
 - Saladlar
 - Ichimliklar
 - Fast Food
